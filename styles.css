@@ -40,7 +40,7 @@ footer{
     margin-top:20vh;
     position: sticky;
     bottom: 0;
-    background-color:#283044;
+    background-color:black;
     color:#EBF5EE;
     display:flex;
     flex-direction:row;
@@ -126,4 +126,79 @@ body{
     height: 20%;
     width: 50%;
     animation: slide-in 2000ms;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center; 
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .divform {
+        width: 80%; 
+    }
+
+    img {
+        height: auto; 
+        width: 100%; 
+        object-fit: cover; 
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        height: auto;
+        width: 100%; 
+        object-fit: cover; 
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .topnav a {
+        font-size: 15px; 
+    }
+
+    .container {
+        align-items: center; 
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+
+    .divform {
+        width: 90%; 
+    }
+
+    .card {
+        width: 100%;
+        height: auto; 
+        margin: 10px 0; 
+    }
+
+    img {
+        height: auto; 
+        width: 100%; 
+        object-fit: cover; 
+    }
+
+    .flex-container {
+        margin-left: 0;
+        align-items: center; 
+    }
 }
